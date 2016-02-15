@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Admin</title>
+    <meta charset="utf-8" />
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/app.css" rel="stylesheet"/>
+
+    <script src="libs/jQuery/jquery-1.10.2.min.js"></script>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="scripts/vendors/angular-cookie.min.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+    <script src="libs/angular/angular-loader.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/common/ui-bootstrap.js"></script>
+    <script src="scripts/common/bootstrap-datepicker.js"></script>
+    
+    <script src="scripts/studentManagementApp.js"></script>
+    <script src="scripts/common/fmDatePicker.js"></script>
+    <script src="scripts/common/apiTools.js"></script>
+    <script src="scripts/common/httpProxy.js"></script>
+    <script src="scripts/student/studentService.js"></script>
+    <script src="scripts/header/headerController.js"></script>
+    <script src="scripts/student/studentController.js"></script>
+    <script src="scripts/user/userService.js"></script>
+    <script src="scripts/user/userController.js"></script>
+    
+</head>
+<body ng-app="app">
+    <div id="wrap" ng-class="{'nav-min':isMini}">
+
+        <section ng-class="" data-ng-include=" 'header.html' "></section>
+
+        <div id="main" class="container" style="min-height: 588px;">
+            <div ng-view class="main-content"></div>
+        </div>
+    </div>
+</body>
+</html>
